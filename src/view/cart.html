@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> - AmberMall</title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html') %>
+<%= require('html-loader!./layout/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a href="./index.html" class="link">AmberMall></a>
+            <span></span>
+            <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+        </div>
+    </div>
+</div>
+<div class="page-wrap w">
+    <div class="cart-header">
+        <table class="cart-table">
+            <th class="cart-cell">
+                <label class="cart-label">
+                    <input type="checkbox" class="cart-select-all">
+                    <span>全选</span>
+                </label>
+            </th>
+            <th class="cart-cell">商品信息</th>
+            <th class="cart-cell">单价</th>
+            <th class="cart-cell">数量</th>
+            <th class="cart-cell">合计</th>
+            <th class="cart-cell">操作</th>
+        </table>
+    </div>
+    <div class="cart-list">
+        <table class="cart-table">
+            <tr>
+                <td class="cart-cell cell-check">
+                    <label class="cart-label">
+                        <input type="checkbox" class="cart-select">
+                    </label>
+                </td>
+                <td class="cart-cell cell-info">
+                    <img src="" alt="" class="p-img">
+                    <a href="./detail.html?productId=" class="link">xxxxxxx</a>
+                </td>
+                <td class="cart-cell cell-price">￥111</td>
+                <td class="cart-cell cell-count">2</td>
+                <td class="cart-cell cell-total">￥222</td>
+                <td class="cart-cell cell-opera">
+                    <span class="link cart-delete"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="cart-footer">
+        <div class="select-on">
+            <label>
+                <input type="checkbox" class="cart-select-all">
+                <span>全选</span>
+            </label>
+        </div>
+        <div class="delete-on">
+            <span class="link">
+                <i class="fa fa-trash-o"></i>
+                <span>删除选中</span>
+            </span>
+        </div>
+        <div class="submit-on">
+            <span>总价：</span>
+            <span>￥111</span>
+            <span class="submit-total">￥111</span>
+            <span class="btn btn-submit">去结算</span>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.cart-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ebebeb;
+	margin-bottom: 10px;
+}
+/*header*/
+.cart-header {
+	background: #eee;
+}
+.cart-header .cart-cell {
+	height: 40px;
+	line-height: 40px;
+
+}
