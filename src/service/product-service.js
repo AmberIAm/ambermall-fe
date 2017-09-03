@@ -11,7 +11,7 @@ var _product = {
     getProductList: function(listParam, resolve, reject){
         _common.request({
             url: _common.getServerUrl('/product/list.do'),
-			data: listParam,
+            data: listParam,
             success: resolve,
             error: reject
         });
