@@ -1,0 +1,34 @@
+{
+  "name": "mall",
+  "version": "1.0.0",
+  "description": "mall front-end code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmberIAm/mall.git"
+  },
+  "author": "Amber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmberIAm/mall/issues"
+  },
+  "homepage": "https://github.com/AmberIAm/mall#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
