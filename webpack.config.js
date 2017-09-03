@@ -7,6 +7,7 @@ var getHtmlConfig = function(name, title){
 	return {
 		template: './src/view/' + name + '.html',
  		filename: 'view/' + name + '.html',
+		favicon: './favicon.ico',
 		title: title,
  		inject: true,
  		hash: true,
@@ -35,7 +36,7 @@ var config = {
      },
      output: {
          path    : path.resolve(__dirname, 'dist'),
-         publicPath : '/dist',
+         publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ambermall.com/mall-fe/dist/',
          filename: 'js/[name].js'
      },
      // 引进jquery
