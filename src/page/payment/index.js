@@ -35,11 +35,13 @@ var page = {
     // 监听订单状态
     listenOrderStatus: function () {
         var _this = this;
-        this.paymentTimer = window.setInterval(function () {
+        _this.paymentTimer = window.setInterval(function () {
+            console.log(_this.data.orderNumber);
             _payment.getPaymentStatus(_this.data.orderNumber, function (res) {
-                if(res == true) {
+                if(res === true) {
                     window.location.href
                         = './result.html?type=payment&orderNumber=' + _this.data.orderNumber;
+                    console.log("111" + _this.data.orderNumber);
                 }
             })
         }, 5000)

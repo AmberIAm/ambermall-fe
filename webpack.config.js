@@ -36,7 +36,8 @@ var config = {
      },
      output: {
          path    : path.resolve(__dirname, 'dist'),
-         publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ambermall.com/mall-fe/dist/',
+         // publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ambermall.com/mall-fe/dist/',
+         publicPath : '/dist/',
          filename: 'js/[name].js'
      },
      // 引进jquery
