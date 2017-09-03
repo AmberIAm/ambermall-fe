@@ -1,9 +1,3 @@
-/*
-* @Author: Administrator
-* @Date:   2017-08-27 15:11:20
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-08-27 15:19:55
-*/
 'use strict';
 var _common = require('util/common.js');
 var _address = {

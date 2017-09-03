@@ -1,10 +1,3 @@
-/*
-* @Author: Administrator
-* @Date:   2017-08-26 11:20:58
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-08-26 14:42:13
-*/
-
 'use strict';
 var Hogan = require('hogan.js');
 var conf = {

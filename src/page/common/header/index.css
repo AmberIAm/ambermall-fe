@@ -1,13 +1,7 @@
-/*
-* @Author: Administrator
-* @Date:   2017-08-27 15:03:15
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-08-27 15:41:44
-*/
 /*通用头部导航*/
 .header .logo {
 	position: absolute;
-	left: 50px;
+	left: 5px;
 	top: 34px;
 	display: block;
 	font-size: 36px;

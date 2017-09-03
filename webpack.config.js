@@ -17,7 +17,7 @@ var getHtmlConfig = function(name, title){
 // webpack配置
 var config = {
      entry: {
-     	'common': ['./src/page/common/index.js', 'webpack-dev-server/client?http://localhost:8088/'],
+     	'common': ['./src/page/common/index.js', 'webpack-dev-server/client?http://localhost:80/'],
      	'index': ['./src/page/index/index.js'],
      	'list': ['./src/page/list/index.js'],
      	'detail': ['./src/page/detail/index.js'],
@@ -36,8 +36,7 @@ var config = {
      },
      output: {
          path    : path.resolve(__dirname, 'dist'),
-         publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ambermall.com/mall-fe/dist/',
-         // publicPath : '/dist/',
+         publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ambermall.com/ambermall-fe/dist/',
          filename: 'js/[name].js'
      },
      // 引进jquery

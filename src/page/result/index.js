@@ -1,10 +1,3 @@
-/*
-* @Author: Administrator
-* @Date:   2017-08-27 17:51:03
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-08-27 23:20:39
-*/
-
 'use strict';
 require('./index.css');
 require('page/common/nav-simple/index.js');

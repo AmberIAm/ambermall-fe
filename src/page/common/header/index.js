@@ -1,9 +1,3 @@
-/*
-* @Author: Administrator
-* @Date:   2017-08-27 15:03:08
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-08-27 15:44:15
-*/
 'use strict';
 require('./index.css');
 var _common = require('util/common.js');
