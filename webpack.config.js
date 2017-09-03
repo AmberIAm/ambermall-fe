@@ -2,6 +2,10 @@ var webpack           = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path              = require('path');
+
+// 环境变量
+var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
+
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function(name, title){
 	return {
@@ -17,7 +21,7 @@ var getHtmlConfig = function(name, title){
 // webpack配置
 var config = {
      entry: {
-     	'common': ['./src/page/common/index.js', 'webpack-dev-server/client?http://localhost:80/'],
+     	'common': ['./src/page/common/index.js'],
      	'index': ['./src/page/index/index.js'],
      	'list': ['./src/page/list/index.js'],
      	'detail': ['./src/page/detail/index.js'],
@@ -97,4 +101,7 @@ var config = {
 		new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果'))
      ]
  };
+if('dev' === WEBPACK_ENV) {
+	config.entry.common.push('webpack-dev-server/client?http://localhost:80/');
+}
 module.exports = config;
