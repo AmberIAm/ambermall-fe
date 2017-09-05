@@ -40,7 +40,7 @@ var config = {
      },
      output: {
          path    : path.resolve(__dirname, 'dist'),
-         publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//112.74.23.144:80/ambermall-fe/dist/',
+         publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//112.74.23.144:8080/ambermall-fe/',
          filename: 'js/[name].js'
      },
      // 引进jquery
