@@ -102,6 +102,6 @@ var config = {
      ]
  };
 if('dev' === WEBPACK_ENV) {
-	config.entry.common.push('webpack-dev-server/client?http://localhost:80/');
+	config.entry.common.push('webpack-dev-server/client?http://localhost:8080/');
 }
 module.exports = config;
